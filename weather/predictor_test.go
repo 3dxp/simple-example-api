@@ -14,6 +14,9 @@ func TestGetPredictions(t *testing.T) {
 			st.Errorf("ExpecteTestGetPredictionByLocationID/GetsExpectedPrediction in github.com/3dxp/lame-example-api/weatherd 5 predictions; Got %d", len(results))
 		}
 	})
+	t.Run("BROKEN TEST FOR EXAMPLE", func(t *testing.T) {
+		t.Fail()
+	})
 }
 
 func TestGetPredictionByLocationID(t *testing.T) {
